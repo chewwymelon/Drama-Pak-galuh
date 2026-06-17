@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drama Pak Galuh - Soundboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎵 Drama Pak Galuh Soundboard</h1>
+            <p class="subtitle">Click any button to play the sound</p>
+        </header>
+
+        <div class="audio-player-container">
+            <div class="now-playing">
+                <span class="now-playing-label">Now Playing:</span>
+                <span class="now-playing-name" id="nowPlayingName">-</span>
+            </div>
+            <audio id="audioPlayer" controls>
+                <source id="audioSource" src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="playback-controls">
+                <button class="control-btn" id="stopBtn" title="Stop">⏹️ Stop</button>
+                <button class="control-btn" id="volumeDownBtn" title="Volume Down">🔉</button>
+                <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="70" title="Volume">
+                <button class="control-btn" id="volumeUpBtn" title="Volume Up">🔊</button>
+            </div>
+        </div>
+
+        <div class="soundboard-grid" id="soundboard">
+            <!-- Sound buttons will be generated here by JavaScript -->
+        </div>
+
+        <footer>
+            <p>📖 See README.md to customize sounds and add more sounds</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
