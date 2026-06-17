@@ -2,38 +2,41 @@
 // SOUNDBOARD CONFIGURATION
 // ============================================
 // Edit the sounds array below to add/modify sounds
-// Format: { name: "Sound Name", emoji: "🎵", url: "GOOGLE_DRIVE_LINK" }
+// Format: { name: "Sound Name", emoji: "🎵", url: "audio/filename.mp3" }
+// 
+// Audio files should be placed in the /audio folder
+// Example: /audio/sound1.mp3, /audio/sound2.mp3, etc.
 
 const sounds = [
     {
         name: "Kangen",
         emoji: "👋",
-        url: "https://drive.google.com/uc?export=download&id=t1u4QDtzUkLu8fXNC8BJPSf-GNBBC7XYuX"
+        url: "audio/kangen.mp3"
     },
     {
         name: "from the start",
         emoji: "😲",
-        url: "https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID"
+        url: "audio/from-the-start.mp3"
     },
     {
         name: "Columbula",
         emoji: "😔",
-        url: "https://drive.google.com/uc?export=download&id=1u4QDtzUkLu8fXNC8BJPSf-GNBBC7XYuX"
+        url: "audio/columbula.mp3"
     },
     {
         name: "Applause",
         emoji: "👏",
-        url: "https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID"
+        url: "audio/applause.mp3"
     },
     {
         name: "Ding!",
         emoji: "🔔",
-        url: "https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID"
+        url: "audio/ding.mp3"
     },
     {
         name: "Whistle",
         emoji: "🎶",
-        url: "https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID"
+        url: "audio/whistle.mp3"
     }
 ];
 
@@ -77,7 +80,10 @@ function playSound(sound, button) {
     // Set audio source and play
     audioSource.src = sound.url;
     audioPlayer.load();
-    audioPlayer.play();
+    audioPlayer.play().catch(error => {
+        console.error('Error playing audio:', error);
+        alert(`Tidak bisa memainkan: ${sound.name}\nPeriksa apakah file ada di folder /audio/`);
+    });
 
     // Update UI
     currentPlayingButton = button;
