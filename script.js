@@ -8,17 +8,17 @@ const sounds = [
     {
         name: "Kangen",
         emoji: "👋",
-        url: "https://drive.google.com/file/d/1oK38Bsh-aB-YsvtgHDkkUpm9b14EiDf3/view?usp=drivesdk"
+        url: "https://drive.google.com/uc?export=download&id=t1u4QDtzUkLu8fXNC8BJPSf-GNBBC7XYuX"
     },
     {
         name: "from the start",
         emoji: "😲",
-        url: "https://drive.google.com/file/d/150TbVofR4jazPpeGApe967_Qg1By5k1A/view?usp=drivesdk"
+        url: "https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID"
     },
     {
         name: "Columbula",
         emoji: "😔",
-        url: "https://drive.google.com/file/d/1u4QDtzUkLu8fXNC8BJPSf-GNBBC7XYuX/view?usp=drivesdk"
+        url: "https://drive.google.com/uc?export=download&id=1u4QDtzUkLu8fXNC8BJPSf-GNBBC7XYuX"
     },
     {
         name: "Applause",
