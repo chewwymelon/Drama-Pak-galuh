@@ -6,19 +6,19 @@
 
 const sounds = [
     {
-        name: "Halo Pak Galuh",
+        name: "Kangen",
         emoji: "👋",
-        url: "https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID"
+        url: "https://drive.google.com/file/d/1oK38Bsh-aB-YsvtgHDkkUpm9b14EiDf3/view?usp=drivesdk"
     },
     {
-        name: "Wow Effect",
+        name: "from the start",
         emoji: "😲",
-        url: "https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID"
+        url: "https://drive.google.com/file/d/150TbVofR4jazPpeGApe967_Qg1By5k1A/view?usp=drivesdk"
     },
     {
-        name: "Laugh",
-        emoji: "😂",
-        url: "https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID"
+        name: "Columbula",
+        emoji: "😔",
+        url: "https://drive.google.com/file/d/1u4QDtzUkLu8fXNC8BJPSf-GNBBC7XYuX/view?usp=drivesdk"
     },
     {
         name: "Applause",
