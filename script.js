@@ -27,7 +27,7 @@ const sounds = [
     },
     {
         name: "Ding!",
-        emoji: "��",
+        emoji: "🔔",
         url: "https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID"
     },
     {
